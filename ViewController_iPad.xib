@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="LeftEyeView" destination="163" id="169"/>
+                <outlet property="RightEyeView" destination="158" id="170"/>
+                <outlet property="TestImageView" destination="140" id="147"/>
+                <outlet property="calibrateButton" destination="122" id="223"/>
+                <outlet property="look" destination="131" id="139"/>
+                <outlet property="previewView" destination="3" id="171"/>
+                <outlet property="view" destination="1" id="9"/>
+                <outlet property="visualView" destination="10" id="15"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="122">
+                            <rect key="frame" x="292" y="480" width="218" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="218" id="215"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Look at me n Tap">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Calibrate:" destination="-1" eventType="touchUpInside" id="130"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="131">
+                            <rect key="frame" x="300" y="444" width="192" height="136"/>
+                            <color key="backgroundColor" red="1" green="0.21870284779999999" blue="0.28954477979999999" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="136" id="204"/>
+                                <constraint firstAttribute="width" constant="192" id="205"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="140">
+                            <rect key="frame" x="51" y="0.0" width="263" height="226"/>
+                            <color key="backgroundColor" red="1" green="0.21870284779999999" blue="0.28954477979999999" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="226" id="148"/>
+                                <constraint firstAttribute="width" constant="263" id="149"/>
+                            </constraints>
+                        </imageView>
+                        <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="158">
+                            <rect key="frame" x="345" y="5" width="186" height="221"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="221" id="179"/>
+                                <constraint firstAttribute="width" constant="186" id="206"/>
+                            </constraints>
+                        </imageView>
+                        <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="163">
+                            <rect key="frame" x="579" y="3" width="179" height="223"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="179" id="208"/>
+                                <constraint firstAttribute="height" constant="223" id="210"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="140" firstAttribute="top" secondItem="10" secondAttribute="top" id="156"/>
+                        <constraint firstItem="140" firstAttribute="leading" secondItem="10" secondAttribute="leading" constant="51" id="157"/>
+                        <constraint firstItem="140" firstAttribute="bottom" secondItem="158" secondAttribute="bottom" id="178"/>
+                        <constraint firstAttribute="trailing" secondItem="163" secondAttribute="trailing" constant="10" id="185"/>
+                        <constraint firstItem="158" firstAttribute="leading" secondItem="10" secondAttribute="leading" constant="345" id="207"/>
+                        <constraint firstItem="163" firstAttribute="bottom" secondItem="158" secondAttribute="bottom" id="209"/>
+                        <constraint firstItem="122" firstAttribute="top" secondItem="10" secondAttribute="top" constant="480" id="226"/>
+                        <constraint firstItem="131" firstAttribute="leading" secondItem="10" secondAttribute="leading" constant="300" id="228"/>
+                        <constraint firstItem="131" firstAttribute="centerY" secondItem="10" secondAttribute="centerY" id="229"/>
+                        <constraint firstItem="122" firstAttribute="leading" secondItem="10" secondAttribute="leading" constant="292" id="230"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="4"/>
+                <constraint firstItem="3" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="5"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="1" secondAttribute="top" id="6"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="7"/>
+                <constraint firstItem="10" firstAttribute="top" secondItem="1" secondAttribute="top" id="40"/>
+                <constraint firstItem="10" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="41"/>
+                <constraint firstItem="10" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="42"/>
+                <constraint firstItem="10" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="43"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36A54B071551440600A67D3D /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A54B061551440600A67D3D /* border.png */; };
+		36CE7309154EB9530050104C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE7308154EB9530050104C /* UIKit.framework */; };
+		36CE730B154EB9530050104C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE730A154EB9530050104C /* Foundation.framework */; };
+		36CE730D154EB9530050104C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE730C154EB9530050104C /* CoreGraphics.framework */; };
+		36CE7313154EB9530050104C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36CE7311154EB9530050104C /* InfoPlist.strings */; };
+		36CE7315154EB9530050104C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CE7314154EB9530050104C /* main.m */; };
+		36CE7319154EB9530050104C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CE7318154EB9530050104C /* AppDelegate.m */; };
+		36CE731C154EB9530050104C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 36CE731B154EB9530050104C /* ViewController.mm */; };
+		36CE731F154EB9530050104C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CE731D154EB9530050104C /* ViewController.xib */; };
+		36CE7326154EB9C10050104C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE7325154EB9C10050104C /* QuartzCore.framework */; };
+		36CE7328154EB9D30050104C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE7327154EB9D30050104C /* CoreImage.framework */; };
+		36CE732E154EBB070050104C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE732D154EBB070050104C /* CoreMedia.framework */; };
+		36CE7330154EBB0E0050104C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE732F154EBB0E0050104C /* CoreVideo.framework */; };
+		36CE7336154EBB550050104C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE7335154EBB550050104C /* AVFoundation.framework */; };
+		36CE7338154EBB610050104C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36CE7337154EBB610050104C /* ImageIO.framework */; };
+		4224920C16F052240023CB01 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4224920B16F052240023CB01 /* ViewController_iPad.xib */; };
+		4224920E16F0698B0023CB01 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4224920D16F0698B0023CB01 /* Default-568h@2x.png */; };
+		42B40A3616F21443000F85DC /* findEyeCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42B40A3016F21443000F85DC /* findEyeCenter.cpp */; };
+		42B40A3716F21443000F85DC /* findEyeCorner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42B40A3216F21443000F85DC /* findEyeCorner.cpp */; };
+		42B40A3816F21443000F85DC /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42B40A3416F21443000F85DC /* helpers.cpp */; };
+		42B40A5A16F2148B000F85DC /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A3B16F2148A000F85DC /* haarcascade_eye.xml */; };
+		42B40A5B16F2148B000F85DC /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A3C16F2148A000F85DC /* haarcascade_eye_tree_eyeglasses.xml */; };
+		42B40A5C16F2148B000F85DC /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A3D16F2148A000F85DC /* haarcascade_frontalface_alt.xml */; };
+		42B40A5D16F2148B000F85DC /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A3E16F2148A000F85DC /* haarcascade_frontalface_alt2.xml */; };
+		42B40A5E16F2148B000F85DC /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A3F16F2148A000F85DC /* haarcascade_frontalface_alt_tree.xml */; };
+		42B40A5F16F2148B000F85DC /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4016F2148A000F85DC /* haarcascade_frontalface_default.xml */; };
+		42B40A6016F2148B000F85DC /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4116F2148A000F85DC /* haarcascade_fullbody.xml */; };
+		42B40A6116F2148B000F85DC /* haarcascade_lefteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4216F2148A000F85DC /* haarcascade_lefteye_2splits.xml */; };
+		42B40A6216F2148B000F85DC /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4316F2148A000F85DC /* haarcascade_lowerbody.xml */; };
+		42B40A6316F2148B000F85DC /* haarcascade_mcs_eyepair_big.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4416F2148A000F85DC /* haarcascade_mcs_eyepair_big.xml */; };
+		42B40A6416F2148B000F85DC /* haarcascade_mcs_eyepair_small.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4516F2148A000F85DC /* haarcascade_mcs_eyepair_small.xml */; };
+		42B40A6516F2148B000F85DC /* haarcascade_mcs_leftear.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4616F2148A000F85DC /* haarcascade_mcs_leftear.xml */; };
+		42B40A6616F2148B000F85DC /* haarcascade_mcs_lefteye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4716F2148A000F85DC /* haarcascade_mcs_lefteye.xml */; };
+		42B40A6716F2148B000F85DC /* haarcascade_mcs_mouth.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4816F2148A000F85DC /* haarcascade_mcs_mouth.xml */; };
+		42B40A6816F2148B000F85DC /* haarcascade_mcs_nose.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4916F2148A000F85DC /* haarcascade_mcs_nose.xml */; };
+		42B40A6916F2148B000F85DC /* haarcascade_mcs_rightear.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4A16F2148A000F85DC /* haarcascade_mcs_rightear.xml */; };
+		42B40A6A16F2148B000F85DC /* haarcascade_mcs_righteye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4B16F2148A000F85DC /* haarcascade_mcs_righteye.xml */; };
+		42B40A6B16F2148B000F85DC /* haarcascade_mcs_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4C16F2148A000F85DC /* haarcascade_mcs_upperbody.xml */; };
+		42B40A6C16F2148B000F85DC /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4D16F2148B000F85DC /* haarcascade_profileface.xml */; };
+		42B40A6D16F2148B000F85DC /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4E16F2148B000F85DC /* haarcascade_righteye_2splits.xml */; };
+		42B40A6E16F2148B000F85DC /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A4F16F2148B000F85DC /* haarcascade_smile.xml */; };
+		42B40A6F16F2148B000F85DC /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A5016F2148B000F85DC /* haarcascade_upperbody.xml */; };
+		42B40A7016F2148B000F85DC /* hogcascade_pedestrians.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A5216F2148B000F85DC /* hogcascade_pedestrians.xml */; };
+		42B40A7116F2148B000F85DC /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A5416F2148B000F85DC /* lbpcascade_frontalface.xml */; };
+		42B40A7216F2148B000F85DC /* lbpcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A5516F2148B000F85DC /* lbpcascade_profileface.xml */; };
+		42B40A7316F2148B000F85DC /* lbpcascade_silverware.xml in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A5616F2148B000F85DC /* lbpcascade_silverware.xml */; };
+		42B40A7416F2148B000F85DC /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A5716F2148B000F85DC /* readme.txt */; };
+		42B40A7516F2148B000F85DC /* trainingfaces_24-24.vec in Resources */ = {isa = PBXBuildFile; fileRef = 42B40A5916F2148B000F85DC /* trainingfaces_24-24.vec */; };
+		42B40A7816F21706000F85DC /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42B40A7716F21706000F85DC /* UIImage+OpenCV.mm */; };
+		42B40A7C16F232F0000F85DC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B40A7B16F232EF000F85DC /* libz.dylib */; };
+		42B40A7E16F235FB000F85DC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B40A7D16F235FB000F85DC /* opencv2.framework */; };
+		42CB0C6D16F4E67B008FD228 /* EyeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB0C6C16F4E67B008FD228 /* EyeLocation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36A54B061551440600A67D3D /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border.png; sourceTree = "<group>"; };
+		36CE7304154EB9530050104C /* EyeTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CE7308154EB9530050104C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		36CE730A154EB9530050104C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		36CE730C154EB9530050104C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		36CE7310154EB9530050104C /* EyeTracking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EyeTracking-Info.plist"; sourceTree = "<group>"; };
+		36CE7312154EB9530050104C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36CE7314154EB9530050104C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36CE7316154EB9530050104C /* EyeTracking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyeTracking-Prefix.pch"; sourceTree = "<group>"; };
+		36CE7317154EB9530050104C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36CE7318154EB9530050104C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36CE731A154EB9530050104C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		36CE731B154EB9530050104C /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		36CE731E154EB9530050104C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		36CE7325154EB9C10050104C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		36CE7327154EB9D30050104C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		36CE732D154EBB070050104C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		36CE732F154EBB0E0050104C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		36CE7335154EBB550050104C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		36CE7337154EBB610050104C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		4224920B16F052240023CB01 /* ViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController_iPad.xib; path = ../ViewController_iPad.xib; sourceTree = "<group>"; };
+		4224920D16F0698B0023CB01 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		42B40A2F16F21443000F85DC /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		42B40A3016F21443000F85DC /* findEyeCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCenter.cpp; sourceTree = "<group>"; };
+		42B40A3116F21443000F85DC /* findEyeCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findEyeCenter.h; sourceTree = "<group>"; };
+		42B40A3216F21443000F85DC /* findEyeCorner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = findEyeCorner.cpp; sourceTree = "<group>"; };
+		42B40A3316F21443000F85DC /* findEyeCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findEyeCorner.h; sourceTree = "<group>"; };
+		42B40A3416F21443000F85DC /* helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helpers.cpp; sourceTree = "<group>"; };
+		42B40A3516F21443000F85DC /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		42B40A3B16F2148A000F85DC /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
+		42B40A3C16F2148A000F85DC /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		42B40A3D16F2148A000F85DC /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		42B40A3E16F2148A000F85DC /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		42B40A3F16F2148A000F85DC /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		42B40A4016F2148A000F85DC /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		42B40A4116F2148A000F85DC /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
+		42B40A4216F2148A000F85DC /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
+		42B40A4316F2148A000F85DC /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
+		42B40A4416F2148A000F85DC /* haarcascade_mcs_eyepair_big.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_eyepair_big.xml; sourceTree = "<group>"; };
+		42B40A4516F2148A000F85DC /* haarcascade_mcs_eyepair_small.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_eyepair_small.xml; sourceTree = "<group>"; };
+		42B40A4616F2148A000F85DC /* haarcascade_mcs_leftear.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_leftear.xml; sourceTree = "<group>"; };
+		42B40A4716F2148A000F85DC /* haarcascade_mcs_lefteye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_lefteye.xml; sourceTree = "<group>"; };
+		42B40A4816F2148A000F85DC /* haarcascade_mcs_mouth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_mouth.xml; sourceTree = "<group>"; };
+		42B40A4916F2148A000F85DC /* haarcascade_mcs_nose.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_nose.xml; sourceTree = "<group>"; };
+		42B40A4A16F2148A000F85DC /* haarcascade_mcs_rightear.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_rightear.xml; sourceTree = "<group>"; };
+		42B40A4B16F2148A000F85DC /* haarcascade_mcs_righteye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_righteye.xml; sourceTree = "<group>"; };
+		42B40A4C16F2148A000F85DC /* haarcascade_mcs_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_upperbody.xml; sourceTree = "<group>"; };
+		42B40A4D16F2148B000F85DC /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
+		42B40A4E16F2148B000F85DC /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
+		42B40A4F16F2148B000F85DC /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
+		42B40A5016F2148B000F85DC /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
+		42B40A5216F2148B000F85DC /* hogcascade_pedestrians.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hogcascade_pedestrians.xml; sourceTree = "<group>"; };
+		42B40A5416F2148B000F85DC /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		42B40A5516F2148B000F85DC /* lbpcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_profileface.xml; sourceTree = "<group>"; };
+		42B40A5616F2148B000F85DC /* lbpcascade_silverware.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_silverware.xml; sourceTree = "<group>"; };
+		42B40A5716F2148B000F85DC /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		42B40A5916F2148B000F85DC /* trainingfaces_24-24.vec */ = {isa = PBXFileReference; lastKnownFileType = file; path = "trainingfaces_24-24.vec"; sourceTree = "<group>"; };
+		42B40A7616F21706000F85DC /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		42B40A7716F21706000F85DC /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		42B40A7B16F232EF000F85DC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		42B40A7D16F235FB000F85DC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		42CB0C6B16F4E67B008FD228 /* EyeLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EyeLocation.h; path = FaceDetectionPOC/EyeLocation.h; sourceTree = "<group>"; };
+		42CB0C6C16F4E67B008FD228 /* EyeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EyeLocation.m; path = FaceDetectionPOC/EyeLocation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36CE7301154EB9530050104C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B40A7C16F232F0000F85DC /* libz.dylib in Frameworks */,
+				36CE7338154EBB610050104C /* ImageIO.framework in Frameworks */,
+				36CE7326154EB9C10050104C /* QuartzCore.framework in Frameworks */,
+				36CE732E154EBB070050104C /* CoreMedia.framework in Frameworks */,
+				36CE730D154EB9530050104C /* CoreGraphics.framework in Frameworks */,
+				36CE7328154EB9D30050104C /* CoreImage.framework in Frameworks */,
+				36CE7336154EBB550050104C /* AVFoundation.framework in Frameworks */,
+				36CE7330154EBB0E0050104C /* CoreVideo.framework in Frameworks */,
+				36CE7309154EB9530050104C /* UIKit.framework in Frameworks */,
+				36CE730B154EB9530050104C /* Foundation.framework in Frameworks */,
+				42B40A7E16F235FB000F85DC /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36CE72F9154EB9530050104C = {
+			isa = PBXGroup;
+			children = (
+				42CB0C6B16F4E67B008FD228 /* EyeLocation.h */,
+				42CB0C6C16F4E67B008FD228 /* EyeLocation.m */,
+				4224920D16F0698B0023CB01 /* Default-568h@2x.png */,
+				36CE730E154EB9530050104C /* EyeTracking */,
+				36CE7307154EB9530050104C /* Frameworks */,
+				36CE7305154EB9530050104C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36CE7305154EB9530050104C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36CE7304154EB9530050104C /* EyeTracking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36CE7307154EB9530050104C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42B40A7B16F232EF000F85DC /* libz.dylib */,
+				42B40A7D16F235FB000F85DC /* opencv2.framework */,
+				36CE7337154EBB610050104C /* ImageIO.framework */,
+				36CE7325154EB9C10050104C /* QuartzCore.framework */,
+				36CE7335154EBB550050104C /* AVFoundation.framework */,
+				36CE7327154EB9D30050104C /* CoreImage.framework */,
+				36CE732D154EBB070050104C /* CoreMedia.framework */,
+				36CE732F154EBB0E0050104C /* CoreVideo.framework */,
+				36CE7308154EB9530050104C /* UIKit.framework */,
+				36CE730A154EB9530050104C /* Foundation.framework */,
+				36CE730C154EB9530050104C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36CE730E154EB9530050104C /* EyeTracking */ = {
+			isa = PBXGroup;
+			children = (
+				36CE7317154EB9530050104C /* AppDelegate.h */,
+				36CE7318154EB9530050104C /* AppDelegate.m */,
+				36CE731A154EB9530050104C /* ViewController.h */,
+				36CE731B154EB9530050104C /* ViewController.mm */,
+				36CE731D154EB9530050104C /* ViewController.xib */,
+				4224920B16F052240023CB01 /* ViewController_iPad.xib */,
+				36A54B061551440600A67D3D /* border.png */,
+				36CE730F154EB9530050104C /* Supporting Files */,
+			);
+			name = EyeTracking;
+			path = FaceDetectionPOC;
+			sourceTree = "<group>";
+		};
+		36CE730F154EB9530050104C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42B40A3916F2148A000F85DC /* data */,
+				42B40A2F16F21443000F85DC /* constants.h */,
+				42B40A3016F21443000F85DC /* findEyeCenter.cpp */,
+				42B40A3116F21443000F85DC /* findEyeCenter.h */,
+				42B40A3216F21443000F85DC /* findEyeCorner.cpp */,
+				42B40A3316F21443000F85DC /* findEyeCorner.h */,
+				42B40A3416F21443000F85DC /* helpers.cpp */,
+				42B40A3516F21443000F85DC /* helpers.h */,
+				42B40A7616F21706000F85DC /* UIImage+OpenCV.h */,
+				42B40A7716F21706000F85DC /* UIImage+OpenCV.mm */,
+				36CE7310154EB9530050104C /* EyeTracking-Info.plist */,
+				36CE7311154EB9530050104C /* InfoPlist.strings */,
+				36CE7314154EB9530050104C /* main.m */,
+				36CE7316154EB9530050104C /* EyeTracking-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42B40A3916F2148A000F85DC /* data */ = {
+			isa = PBXGroup;
+			children = (
+				42B40A3A16F2148A000F85DC /* haarcascades */,
+				42B40A5116F2148B000F85DC /* hogcascades */,
+				42B40A5316F2148B000F85DC /* lbpcascades */,
+				42B40A5716F2148B000F85DC /* readme.txt */,
+				42B40A5816F2148B000F85DC /* vec_files */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		42B40A3A16F2148A000F85DC /* haarcascades */ = {
+			isa = PBXGroup;
+			children = (
+				42B40A3B16F2148A000F85DC /* haarcascade_eye.xml */,
+				42B40A3C16F2148A000F85DC /* haarcascade_eye_tree_eyeglasses.xml */,
+				42B40A3D16F2148A000F85DC /* haarcascade_frontalface_alt.xml */,
+				42B40A3E16F2148A000F85DC /* haarcascade_frontalface_alt2.xml */,
+				42B40A3F16F2148A000F85DC /* haarcascade_frontalface_alt_tree.xml */,
+				42B40A4016F2148A000F85DC /* haarcascade_frontalface_default.xml */,
+				42B40A4116F2148A000F85DC /* haarcascade_fullbody.xml */,
+				42B40A4216F2148A000F85DC /* haarcascade_lefteye_2splits.xml */,
+				42B40A4316F2148A000F85DC /* haarcascade_lowerbody.xml */,
+				42B40A4416F2148A000F85DC /* haarcascade_mcs_eyepair_big.xml */,
+				42B40A4516F2148A000F85DC /* haarcascade_mcs_eyepair_small.xml */,
+				42B40A4616F2148A000F85DC /* haarcascade_mcs_leftear.xml */,
+				42B40A4716F2148A000F85DC /* haarcascade_mcs_lefteye.xml */,
+				42B40A4816F2148A000F85DC /* haarcascade_mcs_mouth.xml */,
+				42B40A4916F2148A000F85DC /* haarcascade_mcs_nose.xml */,
+				42B40A4A16F2148A000F85DC /* haarcascade_mcs_rightear.xml */,
+				42B40A4B16F2148A000F85DC /* haarcascade_mcs_righteye.xml */,
+				42B40A4C16F2148A000F85DC /* haarcascade_mcs_upperbody.xml */,
+				42B40A4D16F2148B000F85DC /* haarcascade_profileface.xml */,
+				42B40A4E16F2148B000F85DC /* haarcascade_righteye_2splits.xml */,
+				42B40A4F16F2148B000F85DC /* haarcascade_smile.xml */,
+				42B40A5016F2148B000F85DC /* haarcascade_upperbody.xml */,
+			);
+			path = haarcascades;
+			sourceTree = "<group>";
+		};
+		42B40A5116F2148B000F85DC /* hogcascades */ = {
+			isa = PBXGroup;
+			children = (
+				42B40A5216F2148B000F85DC /* hogcascade_pedestrians.xml */,
+			);
+			path = hogcascades;
+			sourceTree = "<group>";
+		};
+		42B40A5316F2148B000F85DC /* lbpcascades */ = {
+			isa = PBXGroup;
+			children = (
+				42B40A5416F2148B000F85DC /* lbpcascade_frontalface.xml */,
+				42B40A5516F2148B000F85DC /* lbpcascade_profileface.xml */,
+				42B40A5616F2148B000F85DC /* lbpcascade_silverware.xml */,
+			);
+			path = lbpcascades;
+			sourceTree = "<group>";
+		};
+		42B40A5816F2148B000F85DC /* vec_files */ = {
+			isa = PBXGroup;
+			children = (
+				42B40A5916F2148B000F85DC /* trainingfaces_24-24.vec */,
+			);
+			path = vec_files;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36CE7303154EB9530050104C /* EyeTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CE7322154EB9530050104C /* Build configuration list for PBXNativeTarget "EyeTracking" */;
+			buildPhases = (
+				36CE7300154EB9530050104C /* Sources */,
+				36CE7301154EB9530050104C /* Frameworks */,
+				36CE7302154EB9530050104C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeTracking;
+			productName = FaceDetectionPOC;
+			productReference = 36CE7304154EB9530050104C /* EyeTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36CE72FB154EB9530050104C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = iCapps;
+			};
+			buildConfigurationList = 36CE72FE154EB9530050104C /* Build configuration list for PBXProject "EyeTracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 36CE72F9154EB9530050104C;
+			productRefGroup = 36CE7305154EB9530050104C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36CE7303154EB9530050104C /* EyeTracking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36CE7302154EB9530050104C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CE7313154EB9530050104C /* InfoPlist.strings in Resources */,
+				36CE731F154EB9530050104C /* ViewController.xib in Resources */,
+				36A54B071551440600A67D3D /* border.png in Resources */,
+				4224920C16F052240023CB01 /* ViewController_iPad.xib in Resources */,
+				4224920E16F0698B0023CB01 /* Default-568h@2x.png in Resources */,
+				42B40A5A16F2148B000F85DC /* haarcascade_eye.xml in Resources */,
+				42B40A5B16F2148B000F85DC /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+				42B40A5C16F2148B000F85DC /* haarcascade_frontalface_alt.xml in Resources */,
+				42B40A5D16F2148B000F85DC /* haarcascade_frontalface_alt2.xml in Resources */,
+				42B40A5E16F2148B000F85DC /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				42B40A5F16F2148B000F85DC /* haarcascade_frontalface_default.xml in Resources */,
+				42B40A6016F2148B000F85DC /* haarcascade_fullbody.xml in Resources */,
+				42B40A6116F2148B000F85DC /* haarcascade_lefteye_2splits.xml in Resources */,
+				42B40A6216F2148B000F85DC /* haarcascade_lowerbody.xml in Resources */,
+				42B40A6316F2148B000F85DC /* haarcascade_mcs_eyepair_big.xml in Resources */,
+				42B40A6416F2148B000F85DC /* haarcascade_mcs_eyepair_small.xml in Resources */,
+				42B40A6516F2148B000F85DC /* haarcascade_mcs_leftear.xml in Resources */,
+				42B40A6616F2148B000F85DC /* haarcascade_mcs_lefteye.xml in Resources */,
+				42B40A6716F2148B000F85DC /* haarcascade_mcs_mouth.xml in Resources */,
+				42B40A6816F2148B000F85DC /* haarcascade_mcs_nose.xml in Resources */,
+				42B40A6916F2148B000F85DC /* haarcascade_mcs_rightear.xml in Resources */,
+				42B40A6A16F2148B000F85DC /* haarcascade_mcs_righteye.xml in Resources */,
+				42B40A6B16F2148B000F85DC /* haarcascade_mcs_upperbody.xml in Resources */,
+				42B40A6C16F2148B000F85DC /* haarcascade_profileface.xml in Resources */,
+				42B40A6D16F2148B000F85DC /* haarcascade_righteye_2splits.xml in Resources */,
+				42B40A6E16F2148B000F85DC /* haarcascade_smile.xml in Resources */,
+				42B40A6F16F2148B000F85DC /* haarcascade_upperbody.xml in Resources */,
+				42B40A7016F2148B000F85DC /* hogcascade_pedestrians.xml in Resources */,
+				42B40A7116F2148B000F85DC /* lbpcascade_frontalface.xml in Resources */,
+				42B40A7216F2148B000F85DC /* lbpcascade_profileface.xml in Resources */,
+				42B40A7316F2148B000F85DC /* lbpcascade_silverware.xml in Resources */,
+				42B40A7416F2148B000F85DC /* readme.txt in Resources */,
+				42B40A7516F2148B000F85DC /* trainingfaces_24-24.vec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36CE7300154EB9530050104C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CE7315154EB9530050104C /* main.m in Sources */,
+				36CE7319154EB9530050104C /* AppDelegate.m in Sources */,
+				36CE731C154EB9530050104C /* ViewController.mm in Sources */,
+				42B40A3616F21443000F85DC /* findEyeCenter.cpp in Sources */,
+				42B40A3716F21443000F85DC /* findEyeCorner.cpp in Sources */,
+				42B40A3816F21443000F85DC /* helpers.cpp in Sources */,
+				42B40A7816F21706000F85DC /* UIImage+OpenCV.mm in Sources */,
+				42CB0C6D16F4E67B008FD228 /* EyeLocation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		36CE7311154EB9530050104C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36CE7312154EB9530050104C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		36CE731D154EB9530050104C /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36CE731E154EB9530050104C /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36CE7320154EB9530050104C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36CE7321154EB9530050104C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36CE7323154EB9530050104C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceDetectionPOC/EyeTracking-Prefix.pch";
+				INFOPLIST_FILE = "FaceDetectionPOC/EyeTracking-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.EyeTracking;
+				PRODUCT_NAME = EyeTracking;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		36CE7324154EB9530050104C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceDetectionPOC/EyeTracking-Prefix.pch";
+				INFOPLIST_FILE = "FaceDetectionPOC/EyeTracking-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.EyeTracking;
+				PRODUCT_NAME = EyeTracking;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36CE72FE154EB9530050104C /* Build configuration list for PBXProject "EyeTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CE7320154EB9530050104C /* Debug */,
+				36CE7321154EB9530050104C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36CE7322154EB9530050104C /* Build configuration list for PBXNativeTarget "EyeTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CE7323154EB9530050104C /* Debug */,
+				36CE7324154EB9530050104C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36CE72FB154EB9530050104C /* Project object */;
+}
